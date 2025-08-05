@@ -1,0 +1,244 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: azure;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.rol{
+    margin-right: 0;
+}
+
+nav{
+    background-color: rgb(99, 235, 99);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background-color: white;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    font-weight: bold;
+}
+
+img{
+    border-radius: 5px;
+    margin-top: 3.5px;
+}
+
+.ed{
+    align-items: center;
+    display: flex;
+    margin-right: 100px;
+}
+.sz{
+    font-size: small;
+}
+
+.search_box{
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+}
+button{
+    height: 30px;
+    margin-left: 3px;
+    border-radius: 10px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height:100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:transparent;
+    backdrop-filter: blur(10px) ;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items:flex-start ;
+}
+
+.sidebar li{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 60px;
+
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.showbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height:100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:transparent;
+    backdrop-filter: blur(10px) ;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items:flex-start ;
+}
+
+.showbar li{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 60px;
+
+}
+.showbar a{
+    width: 100%;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .ed{
+        display: none;
+    }
+    .product{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media(min-width: 810px){
+    .itemer{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+
+.itemer{
+    margin-top: 60px;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90vw;
+    height: fit-content;
+    padding: 0;
+    
+    
+    
+}
+
+.items{
+    align-items: center;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 17px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.items button{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-color:  rgb(99, 235, 99);
+    margin-left:7px ;
+    
+}
+
+.items a :hover{
+    color: azure;
+}
+
+.items p{
+    font-weight: bold;
+}
+
+.payment{
+    
+    margin-top: 40px;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.itemss{
+    align-items: center;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    margin-top: 80px;
+    margin-left: 17px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.payment button{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.payment a :hover{
+    background-color: aquamarine;
+}
+
+.buy{
+    width: 90vw;
+    height: 60vh;
+}
+

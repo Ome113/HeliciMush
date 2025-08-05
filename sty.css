@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: azure;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.rol{
+    margin-right: 0;
+}
+
+nav{
+    background-color: rgb(99, 235, 99);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul{
+    width: 100vw;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background-color: white;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    font-weight: bold;
+}
+
+img{
+    border-radius: 5px;
+    margin-top: 3.5px;
+}
+
+.ed{
+    align-items: center;
+    display: flex;
+    margin-right: 100px;
+}
+.sz{
+    font-size: small;
+}
+
+.search_box{
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+}
+button{
+    height: 30px;
+    margin-left: 3px;
+    border-radius: 10px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height:100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:transparent;
+    backdrop-filter: blur(10px) ;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items:flex-start ;
+}
+
+.sidebar li{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 60px;
+
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.showbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height:100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:transparent;
+    backdrop-filter: blur(10px) ;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items:flex-start ;
+}
+
+.showbar li{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 60px;
+
+}
+.showbar a{
+    width: 100%;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .ed{
+        display: none;
+    }
+    .product{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 50vh;
+    }
+}
+
+
+.product{
+    align-items: center;
+    background-color: aliceblue;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    animation: change 30s infinite ease-in-out;
+    width: 100vw ;
+    height: 34vw ;
+    margin-top: 25px;
+    padding: 0;
+}
+
+ 
+
+@keyframes change{
+    0%
+    {
+        background-image: url(loco.jpg);
+    }
+    25%
+    {
+        background-image: url(backk.jpg);
+    }
+    50%
+    {
+        background-image: url(mushy.jpg);
+    }
+    75%
+    {
+        background-image: url(gudd.jpg);
+    }
+    100%
+    {
+        background-image: url(tom.jpg);
+    }
+}
+
+.intro{
+    background: transparent;
+    border-radius: 5px;
+    width: 1300px;
+    height: 200px;
+    margin-top: 12px;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: black;
+}
+
+.intro a{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 30px;
+}
+
+#ji{
+    width: 30vw;
+    height: 6vh;
+    background-color:transparent;
+    backdrop-filter: blur(10px) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 35%;
+    
+}
+#ji:hover{
+    background-color:rgb(99, 235, 99);
+}
+
+#ji a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.intro1{
+    margin-top: 80px;
+}
+
